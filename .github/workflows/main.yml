@@ -1,16 +1,16 @@
-name: Verify Human Identity
+name: kamalearl
 
 on:
   workflow_dispatch:
     inputs:
       agent_name:
-        description: 'kamalearl89@gmail.com'
+        description: 'kamalearl'
         required: true
-        default: 'kamalearl89@gmail.com'
+        default: 'kamalearl'
       agent_description:
-        description: 'kamalearl89@gmail.com'
+        description: 'kamalearl'
         required: true
-        default: 'kamalearl89@gmail.com'
+        default: 'kamalearl'
 
 jobs:
   verify:
@@ -38,4 +38,4 @@ jobs:
 
       - name: Step 3 - Link Human to Agent
         run: |
-          node scripts/manualLinkHumanToAgent.js --challenge '{"name": "kamalearl89@gmail.com", "description": "kamalearl89@gmail.com AI Agent"}'
+          node scripts/manualLinkHumanToAgent.js --challenge '{"name": "kamalearl", "description": "kamalearl AI Agent"}'
